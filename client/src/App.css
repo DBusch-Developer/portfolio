@@ -1,0 +1,249 @@
+html {
+  background-color: #171717;
+}
+
+::-webkit-scrollbar {
+  background-color:#171717; /* or add it to the track */
+  cursor: pointer;
+  width: 4px;
+}
+
+::-webkit-scrollbar-track{
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fde68a;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 75vh;
+}
+
+.header {
+  background-color: #262626;
+  color: white;
+  border: #525252;
+  border-style: solid;
+  border-width: 1px;
+  border-color:#525252;
+  height: 75vh;
+  width: 34vh;
+}
+
+input, textarea {
+  border: #525252;
+  border-style: solid;
+  border-width: 1px;
+  border-color:#525252;
+}
+.tabs-container {
+  background-color: #262626;
+  color: white;
+  border: #525252;
+  border-style: solid;
+  border-width: 1px;
+  border-color:#525252;
+  border-bottom: none;
+}
+
+.tab {
+  padding: 15px 35px 15px 35px;
+  background-color: #404040;
+  cursor: pointer;
+  
+}
+
+.tab.active {
+  color: #fde68a;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  color: white;
+  background-color: #262626;
+  border: #525252;
+  border-style: solid;
+  border-width: 1px;
+  border-color:#525252;
+  border-top: none;
+}
+
+.button-1 {
+  border-bottom-left-radius: 1.5rem;
+  border: #525252;
+  border-style: solid;
+  border-width: 1px;
+  border-color:#525252;
+  border-right: none;
+  border-top: none;
+}
+
+.button-2 {
+  border: #525252;
+  border-style: solid;
+  border-width: 1px;
+  border-color:#525252;
+  border-right: none;
+  border-top: none;
+  border-left: none;
+}
+ .button-3 {
+  border: #525252;
+  border-style: solid;
+  border-width: 1px;
+  border-color:#525252;
+  border-right: none;
+  border-top: none;
+  border-left: none;
+ }
+
+.button-4 {
+  border-top-right-radius: 1.5rem;
+  border: #525252;
+  border-style: solid;
+  border-width: 1px;
+  border-color:#525252;
+  border-right: none;
+  border-top: none;
+  border-left: none;
+}
+
+hr {
+  border-width: 3px;
+  border-radius: 5px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-evenly;
+  /* overscroll-behavior-x: contain; */
+  max-width: 869px;
+  min-width: 869px;
+  margin-bottom: 10px;
+}
+
+.mostly-customized-scrollbar::-webkit-scrollbar {
+  height: 3px!important;
+  background-color:#262626!important; /* or add it to the track */
+  cursor: pointer!important;
+}
+.mostly-customized-scrollbar::-webkit-scrollbar-track{
+border-radius: 4px;
+}
+
+.mostly-customized-scrollbar::-webkit-scrollbar-thumb {
+  background: #fde68a!important;
+  cursor: pointer!important;
+border-radius: 4px;
+
+}
+
+.image:hover {
+  transform: scale(1.1);
+}
+
+.link:hover {
+  color: white;
+}
+
+.type:hover {
+  color:#d1d5db;
+}
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+li.a {
+  list-style-type:disc;
+  color: #fde68a;
+}
+
+/* image overlay */
+
+.image-container {
+  position: relative;
+  /* width: 50%; */
+}
+
+.image-overlay {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: auto;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 0.257);
+  border-radius: 8px;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.button {
+  border: 2px solid #04AA6D; /* Green */
+  border-color: linear-gradient(to right, red , yellow);
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  /* font-size: 24px; */
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  background-color: #262626;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px 16px 0 rgba(0, 0, 0, 0.297);
+}
+
+.button:hover {background-color: #262626}
+
+.button:active {
+  background-color: #262626;
+  box-shadow: 0 5px 16px 0 rgba(0, 0, 0, 0.09);
+  transform: translateY(4px);
+}
+
+.contact-icons {
+  box-shadow: 0 9px 16px 0 rgba(0, 0, 0, 0.297);
+}
+
+/* .toast-in {
+  animation: fadeInRightBig;
+  animation-duration: 2s;
+  
+}
