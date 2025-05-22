@@ -105,7 +105,7 @@ const Header = () => {
             />
           </svg>
         </a>
-        <a href="http://google.com" className="m-2">
+        <a href="https://g.dev/dbusch-developer" target="_blank" className="m-2">
           <svg
             className="link w-6 h-6 text-gray-300  cursor-pointer"
             aria-hidden="true"
