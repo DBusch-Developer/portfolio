@@ -9,7 +9,7 @@ const Header = () => {
           />
           <h1 className="text-3xl mt-5 mb-5">Diana Busch</h1>
           <div className="bg-[#404040] rounded-lg shadow-xl pl-5 pr-5 pt-2 pb-2 mb-5">
-            Full-stack Developer
+            Full Stack Developer
           </div>
         </div>
       </div>
@@ -29,7 +29,7 @@ const Header = () => {
         </div>
         <div>
           <p className="font-semibold text-gray-400 text-sm">EMAIL</p>
-          <p className="">dbusch@gmail.com</p>
+          <p className="">buschdiana007@gmail.com</p>
         </div>
       </div>
       <div className="flex flex-row ml-5 p-5 ">
@@ -48,7 +48,7 @@ const Header = () => {
         </div>
         <div>
           <p className="font-semibold text-gray-400 text-sm">PHONE</p>
-          <p className="">+1 928-242-5895</p>
+          <p className="">+1 928-830-1079</p>
         </div>
       </div>
       <div className="flex flex-row ml-5 p-5 ">
@@ -66,11 +66,11 @@ const Header = () => {
         </div>
         <div>
           <p className="font-semibold text-gray-400 text-sm">LOCATION</p>
-          <p className="">Phoenix, AZ</p>
+          <p className="">Prescott, AZ</p>
         </div>
       </div>
       <div className="flex flex-row justify-center">
-        <a href="http://linkedin.com" className="m-2">
+        <a href="https://www.linkedin.com/in/diana-marie-busch-a17882363/" target="_blank" className="m-2">
           <svg
             className="link w-6 h-6 text-gray-300  cursor-pointer"
             aria-hidden="true"
@@ -88,7 +88,7 @@ const Header = () => {
             <path d="M7.2 8.809H4V19.5h3.2V8.809Z" />
           </svg>
         </a>
-        <a href="http://github.com" className="m-2">
+        <a href="https://github.com/DBusch-Developer" target="_blank" className="m-2">
           <svg
             className="link w-6 h-6 text-gray-300  cursor-pointer"
             aria-hidden="true"
