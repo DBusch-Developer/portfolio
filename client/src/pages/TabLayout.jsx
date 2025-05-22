@@ -3,6 +3,7 @@ import AboutMe from "./AboutMe";
 import Resume from "./Resume";
 import Portfolio from "./Portfolio";
 import Contact from "./Contact";
+import Blog from "./Blog";
 
 const TabLayout = () => {
   const [activeTab, setActiveTab] = useState("tab1");
@@ -11,22 +12,29 @@ const TabLayout = () => {
     { id: "tab1", name: "About", name2: "About Me", content: <AboutMe /> },
     {
       id: "tab2",
+      name: "Blog",
+      name2: "Blog",
+      content: <Blog />,
+    },
+    {
+      id: "tab3",
       name: "Resume",
       name2: "Resume",
       content: <Resume />,
     },
     {
-      id: "tab3",
+      id: "tab4",
       name: "Portfolio",
       name2: "Portfolio",
       content: <Portfolio />,
     },
+   
     {
-      id: "tab4",
+      id: "tab5",
       name: "Contact",
       name2: "Contact",
       content: <Contact />,
-    },
+    }
   ];
 
   return (
@@ -53,19 +61,27 @@ const TabLayout = () => {
               onClick={() => setActiveTab("tab2")}
               className={`tab ${activeTab === "tab2" ? "active" : ""} button-2`}
             >
-              Resume
+              Blog
             </button>
             <button
               key="tab3"
               onClick={() => setActiveTab("tab3")}
               className={`tab ${activeTab === "tab3" ? "active" : ""} button-3`}
             >
-              Portfolio
+              Resume
             </button>
             <button
               key="tab4"
               onClick={() => setActiveTab("tab4")}
               className={`tab ${activeTab === "tab4" ? "active" : ""} button-4`}
+            >
+              Portfolio
+            </button>
+            
+            <button
+              key="tab5"
+              onClick={() => setActiveTab("tab5")}
+              className={`tab ${activeTab === "tab5" ? "active" : ""} button-5`}
             >
               Contact
             </button>
