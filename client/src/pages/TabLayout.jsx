@@ -3,7 +3,7 @@ import AboutMe from "./AboutMe";
 import Resume from "./Resume";
 import Portfolio from "./Portfolio";
 import Contact from "./Contact";
-import Blog from "./Blog";
+import Blog from "./BlogList";
 
 const TabLayout = () => {
   const [activeTab, setActiveTab] = useState("tab1");
