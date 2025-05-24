@@ -253,8 +253,9 @@ li.a {
   box-shadow: 0 9px 16px 0 rgba(0, 0, 0, 0.297);
 }
 
-/* .toast-in {
-  animation: fadeInRightBig;
-  animation-duration: 2s;
-  
+.map {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%)
 }
