@@ -29,7 +29,7 @@ const Contact = () => {
     );
     console.log(addEmail);
     setShowToast(true);
-    setToast(true)
+    setToast(true);
     setSendEmail({
       fullName: "",
       email: "",
@@ -44,10 +44,19 @@ const Contact = () => {
   return (
     <>
       <h1 className="text-3xl font-bold mt-20 p-5">Contact Form</h1>
-      <img
-        className="p-5 map"
-        src={new URL(`../assets/letsgetstarted.JPG`, import.meta.url).href}
-      />
+      <p>
+        <iframe
+        className="m-auto rounded-lg map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105093.1993923816!2d-112.53595507228393!3d34.60005266053226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872d28d400717ceb%3A0x9a43de752eefedd!2sPrescott%2C%20AZ!5e0!3m2!1sen!2sus!4v1748054001204!5m2!1sen!2sus"
+          width="875"
+          height="450"
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </p>
+
+      
       <form onSubmit={handleSubmit} className="">
         <div className="grid gap-4 mb-4 sm:grid-cols-2 p-5">
           <div>
@@ -144,7 +153,11 @@ const Contact = () => {
         <>
           <div
             id="toast-bottom-right"
-            class={`${toast ? "animate__animated animate__slideInRight animate__fast" : "animate__animated animate__fadeOutRightBig"} fixed p-5 text-[#fde68a] bg-[#262626] rounded-xl shadow-xl right-5 bottom-5`}
+            class={`${
+              toast
+                ? "animate__animated animate__slideInRight animate__fast"
+                : "animate__animated animate__fadeOutRightBig"
+            } fixed p-5 text-[#fde68a] bg-[#262626] rounded-xl shadow-xl right-5 bottom-5`}
             role="alert"
           >
             <div className="flex flex-row items-center justify-center">
