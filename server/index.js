@@ -3,6 +3,7 @@ import express from "express";
 import cors from "cors";
 import mongoose from "mongoose";
 import emailRouter from "./emails/index.js";
+import blogRouter from "./blog/index.js"
 
 const app = express();
 app.use(express.json()); // To parse request body
@@ -21,6 +22,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/emails", emailRouter);
+app.use("/blog", blogRouter)
 
 app.listen(port, () => {
   console.log(`Portfolio app listening on port ${port}`);
